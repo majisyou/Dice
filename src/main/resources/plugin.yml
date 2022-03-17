@@ -1,0 +1,6 @@
+name: Dice
+version: '${version}'
+main: com.github.majisyou.dice.Dice
+api-version: 1.18
+authors: [ majjisyou ]
+description: minecerft-dice
