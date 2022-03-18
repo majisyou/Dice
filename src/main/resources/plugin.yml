@@ -4,3 +4,12 @@ main: com.github.majisyou.dice.Dice
 api-version: 1.18
 authors: [ majjisyou ]
 description: minecerft-dice
+
+commands:
+  dice:
+    description: ダイスコマンド
+    usage: コマンド失敗
+
+  dicetest:
+    description: ダイステスト
+    usage: コマンド失敗
