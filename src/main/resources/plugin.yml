@@ -6,10 +6,14 @@ authors: [ majjisyou ]
 description: minecerft-dice
 
 commands:
-  dice:
+  setdice:
     description: ダイスコマンド
     usage: コマンド失敗
 
-  dicetest:
+  setdicetest:
     description: ダイステスト
+    usage: コマンド失敗
+
+  setc_lo:
+    description: チンチロリンをするコマンド
     usage: コマンド失敗
