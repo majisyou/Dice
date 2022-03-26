@@ -1,25 +1,20 @@
 package com.github.majisyou.dice.system;
 
-import org.bukkit.ChatColor;
-
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Random;
-import java.util.logging.Logger;
 
 public class Dicesystem {
 
-    public static int[] Dicemain(int times,int number) {
+    public static List<Integer> Dicemain(int times, int surfaceCount) {
 
-        int[] resultdice = new int[0];  //初期化と呼び出し
+        List<Integer> resultdice = new ArrayList<Integer>();
 
-            int result;
-            resultdice = new int[times];
-            Random ranNum = new Random();
-            for (int i = 0; i < times; i++) {
-                result = ranNum.nextInt(number) + 1;
-                resultdice[i] = result;
-            }
-
+        Random randomNumber = new Random();
+        for (int i = 0; i < times; i++) {
+            int result = randomNumber.nextInt(surfaceCount) + 1;
+            resultdice.add(result);
+        }
         return resultdice;
-
     }
 }
